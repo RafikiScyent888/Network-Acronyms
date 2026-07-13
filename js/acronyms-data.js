@@ -1,0 +1,1083 @@
+// CompTIA Network+ Acronyms data set
+const ACRONYMS = [
+  {
+    "id": 1,
+    "acronym": "IP",
+    "expansion": "Internet Protocol",
+    "definition": "Assigns addresses to devices and ensures data is sent to the correct destination across a network.",
+    "category": "Networking Fundamentals",
+    "isNew": false
+  },
+  {
+    "id": 2,
+    "acronym": "TCP",
+    "expansion": "Transmission Control Protocol",
+    "definition": "Reliable protocol that ensures data is delivered completely and in order.",
+    "category": "Networking Fundamentals",
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "acronym": "UDP",
+    "expansion": "User Datagram Protocol",
+    "definition": "Fast protocol that sends data without guaranteeing delivery.",
+    "category": "Networking Fundamentals",
+    "isNew": false
+  },
+  {
+    "id": 4,
+    "acronym": "MAC",
+    "expansion": "Media Access Control",
+    "definition": "Unique hardware address assigned to a network interface.",
+    "category": "Networking Fundamentals",
+    "isNew": false
+  },
+  {
+    "id": 5,
+    "acronym": "MTU",
+    "expansion": "Maximum Transmission Unit",
+    "definition": "Largest packet size that can be sent over a network.",
+    "category": "Networking Fundamentals",
+    "isNew": true
+  },
+  {
+    "id": 6,
+    "acronym": "TTL",
+    "expansion": "Time to Live",
+    "definition": "Limits how long a packet can travel before being discarded.",
+    "category": "Networking Fundamentals",
+    "isNew": true
+  },
+  {
+    "id": 7,
+    "acronym": "ARP",
+    "expansion": "Address Resolution Protocol",
+    "definition": "Maps IP addresses to MAC addresses on a local network.",
+    "category": "Networking Fundamentals",
+    "isNew": true
+  },
+  {
+    "id": 8,
+    "acronym": "ICMP",
+    "expansion": "Internet Control Message Protocol",
+    "definition": "Used for diagnostics and error reporting (like ping).",
+    "category": "Networking Fundamentals",
+    "isNew": true
+  },
+  {
+    "id": 9,
+    "acronym": "IGMP",
+    "expansion": "Internet Group Management Protocol",
+    "definition": "Manages multicast group memberships.",
+    "category": "Networking Fundamentals",
+    "isNew": true
+  },
+  {
+    "id": 10,
+    "acronym": "OSI",
+    "expansion": "Open Systems Interconnection",
+    "definition": "7-layer model describing how data moves across a network.",
+    "category": "Networking Fundamentals",
+    "isNew": true
+  },
+  {
+    "id": 11,
+    "acronym": "LAN",
+    "expansion": "Local Area Network",
+    "definition": "Network in a small area like a home or office.",
+    "category": "Network Types & Infrastructure",
+    "isNew": false
+  },
+  {
+    "id": 12,
+    "acronym": "WAN",
+    "expansion": "Wide Area Network",
+    "definition": "Connects multiple LANs across large distances.",
+    "category": "Network Types & Infrastructure",
+    "isNew": false
+  },
+  {
+    "id": 13,
+    "acronym": "WLAN",
+    "expansion": "Wireless Local Area Network",
+    "definition": "LAN that uses Wi-Fi instead of cables.",
+    "category": "Network Types & Infrastructure",
+    "isNew": false
+  },
+  {
+    "id": 14,
+    "acronym": "VLAN",
+    "expansion": "Virtual Local Area Network",
+    "definition": "Logically separates networks on the same hardware.",
+    "category": "Network Types & Infrastructure",
+    "isNew": false
+  },
+  {
+    "id": 15,
+    "acronym": "VPC",
+    "expansion": "Virtual Private Cloud",
+    "definition": "Private network hosted within a cloud provider.",
+    "category": "Network Types & Infrastructure",
+    "isNew": true
+  },
+  {
+    "id": 16,
+    "acronym": "VRF",
+    "expansion": "Virtual Routing and Forwarding",
+    "definition": "Allows multiple routing tables on one device.",
+    "category": "Network Types & Infrastructure",
+    "isNew": true
+  },
+  {
+    "id": 17,
+    "acronym": "VXLAN",
+    "expansion": "Virtual Extensible LAN",
+    "definition": "Extends VLANs across large networks.",
+    "category": "Network Types & Infrastructure",
+    "isNew": true
+  },
+  {
+    "id": 18,
+    "acronym": "SDN",
+    "expansion": "Software-defined Network",
+    "definition": "Network controlled by software instead of hardware.",
+    "category": "Network Types & Infrastructure",
+    "isNew": true
+  },
+  {
+    "id": 19,
+    "acronym": "SD-WAN",
+    "expansion": "Software-defined Wide Area Network",
+    "definition": "Uses software to optimize WAN traffic routing.",
+    "category": "Network Types & Infrastructure",
+    "isNew": true
+  },
+  {
+    "id": 20,
+    "acronym": "MPLS",
+    "expansion": "Multiprotocol Label Switching",
+    "definition": "Speeds up traffic using labels instead of IP lookups.",
+    "category": "Network Types & Infrastructure",
+    "isNew": true
+  },
+  {
+    "id": 21,
+    "acronym": "BGP",
+    "expansion": "Border Gateway Protocol",
+    "definition": "Routes traffic between large networks on the Internet.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 22,
+    "acronym": "OSPF",
+    "expansion": "Open Shortest Path First",
+    "definition": "Finds the shortest path for data in a network.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 23,
+    "acronym": "RIP",
+    "expansion": "Routing Information Protocol",
+    "definition": "Uses hop count to determine best route.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 24,
+    "acronym": "EIGRP",
+    "expansion": "Enhanced Interior Gateway Routing Protocol",
+    "definition": "Cisco routing protocol for efficient routing decisions.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 25,
+    "acronym": "IS-IS",
+    "expansion": "Intermediate System to Intermediate System",
+    "definition": "Routing protocol used in large service provider networks.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 26,
+    "acronym": "STP",
+    "expansion": "Spanning Tree Protocol",
+    "definition": "Prevents loops in switched networks.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 27,
+    "acronym": "RSTP",
+    "expansion": "Rapid Spanning Tree Protocol",
+    "definition": "Faster version of STP.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 28,
+    "acronym": "LACP",
+    "expansion": "Link Aggregation Control Protocol",
+    "definition": "Combines multiple links into one connection.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 29,
+    "acronym": "FHRP",
+    "expansion": "First Hop Redundancy Protocol",
+    "definition": "Provides backup gateways.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 30,
+    "acronym": "HSRP",
+    "expansion": "Hot Standby Router Protocol",
+    "definition": "Cisco redundancy protocol for routers.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 31,
+    "acronym": "VRRP",
+    "expansion": "Virtual Router Redundancy Protocol",
+    "definition": "Standard protocol for gateway redundancy.",
+    "category": "Routing & Switching",
+    "isNew": true
+  },
+  {
+    "id": 32,
+    "acronym": "DHCP",
+    "expansion": "Dynamic Host Configuration Protocol",
+    "definition": "Automatically assigns IP addresses.",
+    "category": "IP Addressing & DNS",
+    "isNew": false
+  },
+  {
+    "id": 33,
+    "acronym": "DNS",
+    "expansion": "Domain Name System",
+    "definition": "Translates domain names into IP addresses.",
+    "category": "IP Addressing & DNS",
+    "isNew": false
+  },
+  {
+    "id": 34,
+    "acronym": "DNSSEC",
+    "expansion": "Domain Name System Security Extensions",
+    "definition": "Secures DNS from spoofing attacks.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 35,
+    "acronym": "DoH",
+    "expansion": "DNS over HTTPS",
+    "definition": "Encrypts DNS queries using HTTPS.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 36,
+    "acronym": "DoT",
+    "expansion": "DNS over TLS",
+    "definition": "Encrypts DNS queries using TLS.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 37,
+    "acronym": "CIDR",
+    "expansion": "Classless Inter-domain Routing",
+    "definition": "Flexible IP addressing method.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 38,
+    "acronym": "VLSM",
+    "expansion": "Variable Length Subnet Mask",
+    "definition": "Allows different subnet sizes.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 39,
+    "acronym": "NAT",
+    "expansion": "Network Address Translation",
+    "definition": "Converts private IPs to public IPs.",
+    "category": "IP Addressing & DNS",
+    "isNew": false
+  },
+  {
+    "id": 40,
+    "acronym": "PAT",
+    "expansion": "Port Address Translation",
+    "definition": "Allows many devices to share one public IP.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 41,
+    "acronym": "IPAM",
+    "expansion": "Internet Protocol Address Management",
+    "definition": "Tracks and manages IP addresses.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 42,
+    "acronym": "FQDN",
+    "expansion": "Fully Qualified Domain Name",
+    "definition": "Complete domain name (e.g., www.google.com).",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 43,
+    "acronym": "CNAME",
+    "expansion": "Canonical Name",
+    "definition": "Alias for another domain name.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 44,
+    "acronym": "MX",
+    "expansion": "Mail Exchange",
+    "definition": "Identifies email servers.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 45,
+    "acronym": "PTR",
+    "expansion": "Pointer Record",
+    "definition": "Maps IP to domain name.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 46,
+    "acronym": "NS",
+    "expansion": "Name Server",
+    "definition": "Identifies DNS servers for a domain.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 47,
+    "acronym": "SOA",
+    "expansion": "Start of Authority",
+    "definition": "Contains DNS zone authority information.",
+    "category": "IP Addressing & DNS",
+    "isNew": true
+  },
+  {
+    "id": 48,
+    "acronym": "CIA",
+    "expansion": "Confidentiality, Integrity, Availability",
+    "definition": "Core goals of cybersecurity.",
+    "category": "Security Concepts",
+    "isNew": true
+  },
+  {
+    "id": 49,
+    "acronym": "MFA",
+    "expansion": "Multifactor Authentication",
+    "definition": "Uses multiple forms of verification.",
+    "category": "Security Concepts",
+    "isNew": false
+  },
+  {
+    "id": 50,
+    "acronym": "NAC",
+    "expansion": "Network Access Control",
+    "definition": "Controls who can access the network.",
+    "category": "Security Concepts",
+    "isNew": false
+  },
+  {
+    "id": 51,
+    "acronym": "IAM",
+    "expansion": "Identity and Access Management",
+    "definition": "Manages users and permissions.",
+    "category": "Security Concepts",
+    "isNew": false
+  },
+  {
+    "id": 52,
+    "acronym": "DLP",
+    "expansion": "Data Loss Prevention",
+    "definition": "Prevents sensitive data leaks.",
+    "category": "Security Concepts",
+    "isNew": false
+  },
+  {
+    "id": 53,
+    "acronym": "ZTA",
+    "expansion": "Zero Trust Architecture",
+    "definition": "Trust no device by default.",
+    "category": "Security Concepts",
+    "isNew": true
+  },
+  {
+    "id": 54,
+    "acronym": "UTM",
+    "expansion": "Unified Threat Management",
+    "definition": "Combines multiple security tools.",
+    "category": "Security Concepts",
+    "isNew": false
+  },
+  {
+    "id": 55,
+    "acronym": "SASE",
+    "expansion": "Secure Access Service Edge",
+    "definition": "Cloud-based networking and security.",
+    "category": "Security Concepts",
+    "isNew": true
+  },
+  {
+    "id": 56,
+    "acronym": "SSE",
+    "expansion": "Security Service Edge",
+    "definition": "Cloud-delivered security services.",
+    "category": "Security Concepts",
+    "isNew": true
+  },
+  {
+    "id": 57,
+    "acronym": "WAF",
+    "expansion": "Web Application Firewall",
+    "definition": "Protects web apps from attacks.",
+    "category": "Security Concepts",
+    "isNew": true
+  },
+  {
+    "id": 58,
+    "acronym": "AES",
+    "expansion": "Advanced Encryption Standard",
+    "definition": "Strong encryption standard used globally.",
+    "category": "Security Protocols",
+    "isNew": false
+  },
+  {
+    "id": 59,
+    "acronym": "IPSec",
+    "expansion": "Internet Protocol Security",
+    "definition": "Encrypts network traffic.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 60,
+    "acronym": "AH",
+    "expansion": "Authentication Header",
+    "definition": "Provides authentication for IP packets.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 61,
+    "acronym": "ESP",
+    "expansion": "Encapsulating Security Payload",
+    "definition": "Encrypts and authenticates IP traffic.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 62,
+    "acronym": "SSL",
+    "expansion": "Secure Sockets Layer",
+    "definition": "Older encryption protocol.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 63,
+    "acronym": "TLS",
+    "expansion": "Transport Layer Security",
+    "definition": "Modern secure encryption protocol.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 64,
+    "acronym": "PKI",
+    "expansion": "Public Key Infrastructure",
+    "definition": "Manages encryption keys and certificates.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 65,
+    "acronym": "PSK",
+    "expansion": "Pre-shared Key",
+    "definition": "Shared password for encryption.",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 66,
+    "acronym": "TKIP",
+    "expansion": "Temporal Key Integrity Protocol",
+    "definition": "Older wireless encryption method.",
+    "category": "Security Protocols",
+    "isNew": false
+  },
+  {
+    "id": 67,
+    "acronym": "WPA",
+    "expansion": "Wi-Fi Protected Access",
+    "definition": "Secure wireless encryption standard.",
+    "category": "Security Protocols",
+    "isNew": false
+  },
+  {
+    "id": 68,
+    "acronym": "WEP",
+    "expansion": "Wired Equivalent Privacy",
+    "definition": "Weak, outdated wireless encryption.",
+    "category": "Security Protocols",
+    "isNew": false
+  },
+  {
+    "id": 69,
+    "acronym": "WPS",
+    "expansion": "Wi-Fi Protected Setup",
+    "definition": "Simplifies Wi-Fi setup (less secure).",
+    "category": "Security Protocols",
+    "isNew": true
+  },
+  {
+    "id": 70,
+    "acronym": "DoS",
+    "expansion": "Denial of Service",
+    "definition": "Overloads a system to make it unavailable.",
+    "category": "Security Monitoring",
+    "isNew": false
+  },
+  {
+    "id": 71,
+    "acronym": "DDoS",
+    "expansion": "Distributed Denial of Service",
+    "definition": "Attack from multiple systems.",
+    "category": "Security Monitoring",
+    "isNew": false
+  },
+  {
+    "id": 72,
+    "acronym": "IDS",
+    "expansion": "Intrusion Detection System",
+    "definition": "Detects suspicious activity.",
+    "category": "Security Monitoring",
+    "isNew": true
+  },
+  {
+    "id": 73,
+    "acronym": "IPS",
+    "expansion": "Intrusion Prevention System",
+    "definition": "Detects and blocks threats.",
+    "category": "Security Monitoring",
+    "isNew": true
+  },
+  {
+    "id": 74,
+    "acronym": "SIEM",
+    "expansion": "Security Information and Event Management",
+    "definition": "Collects and analyzes security logs.",
+    "category": "Security Monitoring",
+    "isNew": true
+  },
+  {
+    "id": 75,
+    "acronym": "SSID",
+    "expansion": "Service Set Identifier",
+    "definition": "Name of a Wi-Fi network.",
+    "category": "Wireless Networking",
+    "isNew": false
+  },
+  {
+    "id": 76,
+    "acronym": "BSSID",
+    "expansion": "Basic Service Set Identifier",
+    "definition": "MAC address of access point.",
+    "category": "Wireless Networking",
+    "isNew": true
+  },
+  {
+    "id": 77,
+    "acronym": "ESSID",
+    "expansion": "Extended Service Set Identifier",
+    "definition": "Name for extended wireless network.",
+    "category": "Wireless Networking",
+    "isNew": true
+  },
+  {
+    "id": 78,
+    "acronym": "RSSI",
+    "expansion": "Received Signal Strength Indicator",
+    "definition": "Measures Wi-Fi signal strength.",
+    "category": "Wireless Networking",
+    "isNew": true
+  },
+  {
+    "id": 79,
+    "acronym": "MIMO",
+    "expansion": "Multiple Input Multiple Output",
+    "definition": "Uses multiple antennas for performance.",
+    "category": "Wireless Networking",
+    "isNew": true
+  },
+  {
+    "id": 80,
+    "acronym": "LTE",
+    "expansion": "Long-Term Evolution",
+    "definition": "4G wireless communication standard.",
+    "category": "Wireless Networking",
+    "isNew": false
+  },
+  {
+    "id": 81,
+    "acronym": "NIC",
+    "expansion": "Network Interface Card",
+    "definition": "Connects device to network.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 82,
+    "acronym": "AP",
+    "expansion": "Access Point",
+    "definition": "Provides wireless access.",
+    "category": "Hardware & Cabling",
+    "isNew": false
+  },
+  {
+    "id": 83,
+    "acronym": "WAP",
+    "expansion": "Wireless Access Point",
+    "definition": "Same as AP.",
+    "category": "Hardware & Cabling",
+    "isNew": false
+  },
+  {
+    "id": 84,
+    "acronym": "MDF",
+    "expansion": "Main Distribution Frame",
+    "definition": "Primary network hub location.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 85,
+    "acronym": "IDF",
+    "expansion": "Intermediate Distribution Frame",
+    "definition": "Secondary network hub.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 86,
+    "acronym": "DAC",
+    "expansion": "Direct Attach Copper",
+    "definition": "Short-distance high-speed cable.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 87,
+    "acronym": "BNC",
+    "expansion": "Bayonet Neill–Concelman",
+    "definition": "Coaxial cable connector.",
+    "category": "Hardware & Cabling",
+    "isNew": false
+  },
+  {
+    "id": 88,
+    "acronym": "LC",
+    "expansion": "Local Connector",
+    "definition": "Fiber connector type.",
+    "category": "Hardware & Cabling",
+    "isNew": false
+  },
+  {
+    "id": 89,
+    "acronym": "SC",
+    "expansion": "Subscriber Connector",
+    "definition": "Fiber connector type.",
+    "category": "Hardware & Cabling",
+    "isNew": false
+  },
+  {
+    "id": 90,
+    "acronym": "ST",
+    "expansion": "Straight Tip",
+    "definition": "Fiber connector type.",
+    "category": "Hardware & Cabling",
+    "isNew": false
+  },
+  {
+    "id": 91,
+    "acronym": "MPO",
+    "expansion": "Multifiber Push On",
+    "definition": "Multi-fiber connector.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 92,
+    "acronym": "UTP",
+    "expansion": "Unshielded Twisted Pair",
+    "definition": "Standard Ethernet cable.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 93,
+    "acronym": "STP",
+    "expansion": "Shielded Twisted Pair",
+    "definition": "Cable with shielding.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 94,
+    "acronym": "PoE",
+    "expansion": "Power over Ethernet",
+    "definition": "Sends power over network cable.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 95,
+    "acronym": "QSFP",
+    "expansion": "Quad Small Form-factor Pluggable",
+    "definition": "High-speed transceiver.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 96,
+    "acronym": "SFP",
+    "expansion": "Small Form-factor Pluggable",
+    "definition": "Network interface module.",
+    "category": "Hardware & Cabling",
+    "isNew": true
+  },
+  {
+    "id": 97,
+    "acronym": "OS",
+    "expansion": "Operating System",
+    "definition": "Software that manages hardware and apps.",
+    "category": "Systems & Interfaces",
+    "isNew": false
+  },
+  {
+    "id": 98,
+    "acronym": "GUI",
+    "expansion": "Graphical User Interface",
+    "definition": "Visual interface (windows/icons).",
+    "category": "Systems & Interfaces",
+    "isNew": false
+  },
+  {
+    "id": 99,
+    "acronym": "CLI",
+    "expansion": "Command Line Interface",
+    "definition": "Text-based interface.",
+    "category": "Systems & Interfaces",
+    "isNew": true
+  },
+  {
+    "id": 100,
+    "acronym": "API",
+    "expansion": "Application Programming Interface",
+    "definition": "Allows software to communicate.",
+    "category": "Systems & Interfaces",
+    "isNew": true
+  },
+  {
+    "id": 101,
+    "acronym": "IIS",
+    "expansion": "Internet Information Services",
+    "definition": "Microsoft web server.",
+    "category": "Systems & Interfaces",
+    "isNew": true
+  },
+  {
+    "id": 102,
+    "acronym": "VNC",
+    "expansion": "Virtual Network Computing",
+    "definition": "Remote desktop access tool.",
+    "category": "Systems & Interfaces",
+    "isNew": false
+  },
+  {
+    "id": 103,
+    "acronym": "RDP",
+    "expansion": "Remote Desktop Protocol",
+    "definition": "Microsoft remote access protocol.",
+    "category": "Systems & Interfaces",
+    "isNew": true
+  },
+  {
+    "id": 104,
+    "acronym": "IaaS",
+    "expansion": "Infrastructure as a Service",
+    "definition": "Cloud provides hardware resources.",
+    "category": "Cloud & Virtualization",
+    "isNew": false
+  },
+  {
+    "id": 105,
+    "acronym": "PaaS",
+    "expansion": "Platform as a Service",
+    "definition": "Cloud provides platform for apps.",
+    "category": "Cloud & Virtualization",
+    "isNew": false
+  },
+  {
+    "id": 106,
+    "acronym": "SaaS",
+    "expansion": "Software as a Service",
+    "definition": "Cloud provides software access.",
+    "category": "Cloud & Virtualization",
+    "isNew": false
+  },
+  {
+    "id": 107,
+    "acronym": "NaaS",
+    "expansion": "Network as a Service",
+    "definition": "Cloud-based networking services.",
+    "category": "Cloud & Virtualization",
+    "isNew": true
+  },
+  {
+    "id": 108,
+    "acronym": "VM",
+    "expansion": "Virtual Machine",
+    "definition": "Virtual computer running inside a host.",
+    "category": "Cloud & Virtualization",
+    "isNew": false
+  },
+  {
+    "id": 109,
+    "acronym": "NFV",
+    "expansion": "Network Functions Virtualization",
+    "definition": "Virtualized network services.",
+    "category": "Cloud & Virtualization",
+    "isNew": true
+  },
+  {
+    "id": 110,
+    "acronym": "IaC",
+    "expansion": "Infrastructure as Code",
+    "definition": "Managing infrastructure via code.",
+    "category": "Cloud & Virtualization",
+    "isNew": true
+  },
+  {
+    "id": 111,
+    "acronym": "DAS",
+    "expansion": "Direct Attached Storage",
+    "definition": "Storage directly connected to device.",
+    "category": "Storage",
+    "isNew": true
+  },
+  {
+    "id": 112,
+    "acronym": "NAS",
+    "expansion": "Network Attached Storage",
+    "definition": "Storage accessible over network.",
+    "category": "Storage",
+    "isNew": false
+  },
+  {
+    "id": 113,
+    "acronym": "SAN",
+    "expansion": "Storage Area Network",
+    "definition": "High-speed storage network.",
+    "category": "Storage",
+    "isNew": false
+  },
+  {
+    "id": 114,
+    "acronym": "FC",
+    "expansion": "Fibre Channel",
+    "definition": "High-speed storage protocol.",
+    "category": "Storage",
+    "isNew": true
+  },
+  {
+    "id": 115,
+    "acronym": "CPU",
+    "expansion": "Central Processing Unit",
+    "definition": "The brain of the computer.",
+    "category": "Hardware Components",
+    "isNew": false
+  },
+  {
+    "id": 116,
+    "acronym": "PSU",
+    "expansion": "Power Supply Unit",
+    "definition": "Supplies power to components.",
+    "category": "Hardware Components",
+    "isNew": false
+  },
+  {
+    "id": 117,
+    "acronym": "UPS",
+    "expansion": "Uninterruptible Power Supply",
+    "definition": "Backup power device.",
+    "category": "Hardware Components",
+    "isNew": false
+  },
+  {
+    "id": 118,
+    "acronym": "APU",
+    "expansion": "Audio Processing Unit",
+    "definition": "Handles audio tasks.",
+    "category": "Hardware Components",
+    "isNew": true
+  },
+  {
+    "id": 119,
+    "acronym": "PDU",
+    "expansion": "Power Distribution Unit",
+    "definition": "Distributes power in racks.",
+    "category": "Hardware Components",
+    "isNew": true
+  },
+  {
+    "id": 120,
+    "acronym": "MTBF",
+    "expansion": "Mean Time Between Failures",
+    "definition": "Average time before failure.",
+    "category": "Reliability Metrics",
+    "isNew": true
+  },
+  {
+    "id": 121,
+    "acronym": "MTTR",
+    "expansion": "Mean Time To Repair",
+    "definition": "Average repair time.",
+    "category": "Reliability Metrics",
+    "isNew": true
+  },
+  {
+    "id": 122,
+    "acronym": "RTO",
+    "expansion": "Recovery Time Objective",
+    "definition": "Max acceptable downtime.",
+    "category": "Reliability Metrics",
+    "isNew": true
+  },
+  {
+    "id": 123,
+    "acronym": "RPO",
+    "expansion": "Recovery Point Objective",
+    "definition": "Max acceptable data loss.",
+    "category": "Reliability Metrics",
+    "isNew": true
+  },
+  {
+    "id": 124,
+    "acronym": "AUP",
+    "expansion": "Acceptable Use Policy",
+    "definition": "Rules for system usage.",
+    "category": "Policies & Compliance",
+    "isNew": false
+  },
+  {
+    "id": 125,
+    "acronym": "EULA",
+    "expansion": "End User License Agreement",
+    "definition": "Software usage contract.",
+    "category": "Policies & Compliance",
+    "isNew": false
+  },
+  {
+    "id": 126,
+    "acronym": "NDA",
+    "expansion": "Non-Disclosure Agreement",
+    "definition": "Protects confidential data.",
+    "category": "Policies & Compliance",
+    "isNew": false
+  },
+  {
+    "id": 127,
+    "acronym": "MOU",
+    "expansion": "Memorandum of Understanding",
+    "definition": "Agreement between parties.",
+    "category": "Policies & Compliance",
+    "isNew": true
+  },
+  {
+    "id": 128,
+    "acronym": "SLA",
+    "expansion": "Service-Level Agreement",
+    "definition": "Defines service expectations.",
+    "category": "Policies & Compliance",
+    "isNew": false
+  },
+  {
+    "id": 129,
+    "acronym": "GDPR",
+    "expansion": "General Data Protection Regulation",
+    "definition": "EU privacy law.",
+    "category": "Policies & Compliance",
+    "isNew": true
+  },
+  {
+    "id": 130,
+    "acronym": "PCI DSS",
+    "expansion": "Payment Card Industry Data Security Standard",
+    "definition": "Secures payment data.",
+    "category": "Policies & Compliance",
+    "isNew": true
+  },
+  {
+    "id": 131,
+    "acronym": "IoT",
+    "expansion": "Internet of Things",
+    "definition": "Smart connected devices.",
+    "category": "Industrial & IoT",
+    "isNew": true
+  },
+  {
+    "id": 132,
+    "acronym": "IIoT",
+    "expansion": "Industrial Internet of Things",
+    "definition": "IoT used in industry.",
+    "category": "Industrial & IoT",
+    "isNew": true
+  },
+  {
+    "id": 133,
+    "acronym": "ICS",
+    "expansion": "Industrial Control Systems",
+    "definition": "Controls industrial processes.",
+    "category": "Industrial & IoT",
+    "isNew": true
+  },
+  {
+    "id": 134,
+    "acronym": "SCADA",
+    "expansion": "Supervisory Control and Data Acquisition",
+    "definition": "Monitors industrial systems.",
+    "category": "Industrial & IoT",
+    "isNew": false
+  },
+  {
+    "id": 135,
+    "acronym": "OT",
+    "expansion": "Operational Technology",
+    "definition": "Systems used in industrial environments.",
+    "category": "Industrial & IoT",
+    "isNew": true
+  }
+];
